@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Capa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      background-image: url('imagem/capa.png'); /* Caminho corrigido */
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
+
+    .button-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1em;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #8dbb2b;
+    }
+
+    footer {
+      height: 10vh;
+      background-color: #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="button-container">
+      <button class="btn" onclick="irPara('prova1.html')">Prova 1</button>
+      <button class="btn" onclick="irPara('prova1.htm2')">Prova 2</button>
+      <button class="btn" onclick="irPara('prova1.htm3')">Prova 3</button>
+    </div>
+  </section>
+
+  <footer>
+    Página feita por Flavio Linguanotto
+  </footer>
+
+  <script>
+    function irPara(pagina) {
+      window.location.href = pagina;
+    }
+  </script>
+
+</body>
+</html>

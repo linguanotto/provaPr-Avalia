@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página de Capa</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .hero {
+      background-image: url('imagem/capa.png'); /* Caminho corrigido */
+      background-size: cover;
+      background-position: center;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 1em;
+      background-color: #007BFF;
+      border: none;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #A3D431;
+    }
+
+    footer {
+      height: 10vh;
+      background-color: #f1f1f1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+        <button class="btn" onclick="irParaOutraPagina()">Ir Para a Prova</button>
+  </section>
+
+  <footer>
+    Página feita por Flavio Linguanotto
+  </footer>
+
+  <script>
+    function irParaOutraPagina() {
+      window.location.href = "outra.html";
+    }
+  </script>
+
+</body>
+</html>
